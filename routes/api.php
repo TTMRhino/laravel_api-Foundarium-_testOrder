@@ -22,7 +22,6 @@ Route::get('/cars', [App\Http\Controllers\Api\V1\CarsApiController::class, 'inde
 Route::get('/cars/{id}', [App\Http\Controllers\Api\V1\CarsApiController::class, 'show']);
 Route::get('/user', [App\Http\Controllers\Api\V1\UserApiController::class, 'index']);
 Route::get('/user/{id}', [App\Http\Controllers\Api\V1\UserApiController::class, 'show']);
-
 Route::get('/user/{id}/getcar/{carname}', [App\Http\Controllers\Api\V1\UserApiController::class, 'getcar']);
 
 

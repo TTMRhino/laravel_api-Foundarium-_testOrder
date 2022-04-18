@@ -10,7 +10,10 @@ class Cars extends Model
 {
     public $timestamps = false;
     use HasFactory;
-
+    protected $fillable = [
+        'car_name',
+        'user_id'
+    ];
     public function user()
     {
         return $this->hasOne(User::class, 'user_id');

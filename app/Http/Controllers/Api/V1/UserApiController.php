@@ -26,6 +26,7 @@ class UserApiController extends Controller
 
     public function getcar($id, $carname)
     {
+       
         $car = Cars::where('car_name',$carname)->firstOrFail();
         $user = User::findorFail($id);
         
